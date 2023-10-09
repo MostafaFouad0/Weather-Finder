@@ -1,0 +1,25 @@
+{
+  "name": "weather_finder",
+  "version": "1.0.0",
+  "description": "website that uses weatherapi to get the weather of some country",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MostafaFouad0/Weather-Finder"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Mostafa Mahmoud Fouad",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
