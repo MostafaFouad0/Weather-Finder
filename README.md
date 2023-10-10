@@ -16,5 +16,6 @@ URL
 ```
 http://localhost:3000/
 ```
-
+![homePage](Images/HomePage.PNG)
+![resultPage](Images/resultPage.PNG)
 
