@@ -1,50 +1,67 @@
 body{
     padding: 10px;
-    margin-top: 9%;
-    background-color: rgb(39, 40, 41);
+    background-color: rgb(245, 245, 245);
 }
-.contanier-data{
-    background-color: rgb(97, 103, 122);
-    margin-left: 28%;
-    margin-right: 28%;
-    height: 50vh;
-    border-radius: 10px;
-}
-.no-input{
-    font-size: 1.5rem;
-    color: black;
-}
-.name{
-    color: rgb(255, 246, 224);
-    font-size: 1.3rem;
-}
-.inner{
-    display: flex;
-    justify-content: space-evenly;
-}
-.inner-img{
+#header{
+    font-size: 3rem;
+    height: 20vh;
+    margin-bottom: 8%;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    align-items: center;
+    color: rgb(199, 0, 57);
 }
-.inner-temp{
+.input-home{
+    width: 50%;
+    margin: auto;
+}
+#country-field{
+    padding: 3px;
+    height: 15px;
+    width: 100%;
+    min-width: 50%;
+    border-radius: 5px;
+    border: solid 2px rgb(20, 30, 70);
+}
+#submit-btn{
+    background-color: rgb(199, 0, 57);
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.btn{
     display: flex;
     justify-content: center;
+    margin: 1.7rem;
 }
-.contanier-search{
+.city_name{
+    color: rgb(199, 0, 57);
+    display: flex;
+    justify-content: center;
+    font-size: 2.9rem;
+    margin-bottom: 1%;
+}
+.data{
     display: flex;
     flex-direction: column;
-    margin-top: 1.1rem;
     align-items: center;
+
 }
-#input-country{
-    width: 40%;
-    margin-bottom: 1.1rem;
-    border-radius: 5px;
-    border-style: solid;
-    height: 1.5rem;
+img{
+    width: 80px;
+    height: 80px;
+    margin-top: 1%;
+}
+.data-text{
+    color: rgb(199, 0, 57);
+    font-size: 3rem;
+}
+.data > form{
+    margin-top: 1.5%;
 }
 
-#search-btn{
-    height: 2.1rem;
-}
+

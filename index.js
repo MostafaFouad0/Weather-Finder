@@ -11,19 +11,19 @@ app.use(express.static("public"));
 let data;
 
 app.get('/',(req,res)=>{
-    res.render('index.ejs',{content:data});
+    res.render('index.ejs');
+});
+
+app.get('/result',(req,res)=>{
+    res.render('result.ejs',{content:data});
 });
 
 app.get('/search', async (req,res)=>{
     const country = req.query.country;
-    console.log(country);
-    console.log(`${API_URL}current.json?key=${KEY}&q=${country}`)
-
     try{
-        console.log(`${API_URL}current.json?key=${KEY}&q=${country}`)
         const response = await axios.get(`${API_URL}current.json?key=${KEY}&q=${country}`);
         data=response.data;
-        res.redirect('/');
+        res.redirect('/result');
     }catch (er){
         console.log(`error happend ${er.message}`);
     }

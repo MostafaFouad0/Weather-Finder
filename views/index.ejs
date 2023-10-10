@@ -1,32 +1,12 @@
 <%-include('partials/header.ejs') %>
-<div id="all">
-    <div class="contanier-data">
-        <% if(locals.content) {%>
-            <div class="inner">
-                <p class="name"><%-content.location['name'] %></p>
-                <p class="name"><%-content.current.condition['text'] %></p>
-             </div>
-             <div class="inner-temp">
-                <p class="name"><%-content.current.temp_c%>° C</p>
-            </div>
-             <div class="inner-img">
-                <img src="<%-content.current.condition.icon%>" alt="condition icon">
-            </div>
-        <% }else{%>
-            <p class="no-input">Enter A Name Of A Country</p>
-        <%}%>
-    </div>
-    <form action="/search" method="GET" class="contanier-search">
-        <input type="text" id="input-country" name="country">
-        <input type="submit" id="search-btn" value="search">
+<h1 id="header">Search</h1>
+<div class="input-home">
+    <form action="/search" method="get">
+        <input type="text" id="country-field" placeholder="Enter a name of the country" name="country">
+        <div class="btn">
+        <input type="submit" value="Search" id="submit-btn">
+        </div>
     </form>
 </div>
-
-
-
-
-
-
-
 
 <%-include('partials/footer.ejs') %>

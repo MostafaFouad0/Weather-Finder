@@ -1,0 +1,17 @@
+<%-include('partials/header.ejs') %>
+<div class="weather_data">
+    <h1 class="city_name"><%-content.location.name%></h1>
+    <div class="data">
+        <p class="temp data-text"><%-content.current.temp_c%>° C</p>
+        <p class="condition data-text"><%-content.current.condition.text%></p>
+        <img src="<%-content.current.condition.icon%>">
+        <form action="/" method="get">
+            <input type="submit" value="back" id="submit-btn">
+        </form>
+    </div>
+
+</div>
+
+
+
+<%-include('partials/footer.ejs') %>
