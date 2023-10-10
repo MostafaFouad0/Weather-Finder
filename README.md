@@ -6,3 +6,15 @@ make sure you have all packages installed after you clone the repo
 npm install
 ```
 
+run the server 
+```
+nodemon index.js
+or
+node index.js
+```
+URL
+```
+http://localhost:3000/
+```
+
+
